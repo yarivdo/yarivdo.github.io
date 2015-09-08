@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Planets</title>
+    <style>
+        .redtext {color: red;}
+    </style>
+</head>
+<body>
+    <h1>I have three planets here</h1>
+    <p></p>
+    <h2>Planet Red</h2>
+
+    <p id="red">I am OK</p>
+    <p></p>
+    <h2>Planet Green</h2>
+    <p id="green">I am OK</p>
+    <p></p>
+    
+    <script>
+        // the function init() will help us to start the code ONLY after the page has been loaded
+        // we do that with the window.onload object
+        // See page 249 in the JavaScript Head First book
+        function init() {
+            var myPlanet = document.getElementById("red");
+            myPlanet.setAttribute("class", "redtext")
+            myPlanet.innerHTML = "DefCon 5";
+        }
+
+
+        //Now - execute the code AFTER the page has completed to load
+        window.onload = init;
+        
+    </script>
+
+
+</body>
+</html>
